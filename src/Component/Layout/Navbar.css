@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 15px 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+width: 50px;
+height: 50px;
+}
+.logo-text{
+font-size: 30px;
+display: flex;
+align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-links:last-child{
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00c6ff;
+}
+
+.btn{
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 10%,
+    transparent 40%
+  );
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(0.8); opacity: 0.6; }
+  50%  { transform: scale(1.1); opacity: 0.3; }
+  100% { transform: scale(0.8); opacity: 0.6; }
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+.navbar{
+    padding: 15px 40px;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+}
+.logo-text{
+  font-size: 20px;
+}
+    .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+.nav-links li .btn{
+    width: 100%;
+}
+  #menu-toggle:checked ~ .nav-links {
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

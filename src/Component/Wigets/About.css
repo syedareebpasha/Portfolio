@@ -1,0 +1,232 @@
+.about-section {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.about-heading {
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 85%;
+}
+
+.about-sub {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.about-title {
+  margin-left: 150px;
+  font-size: 40px;
+  color: white;
+}
+
+.about-divider {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin: 0 60px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 100px 0;
+  gap: 40px;
+}
+
+.about-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.exp-num {
+  font-size: 200px;
+  line-height: 1;
+  color: white;
+  font-weight: 700;
+}
+
+.exp-plus {
+  color: #a5a2a2;
+}
+
+.exp-label {
+  font-size: 20px;
+  letter-spacing: 20px;
+  color: #a5a2a2;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-desc {
+  color: #a5a2a2;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-goal {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+
+/* ── BUTTONS ── */
+.about-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .about-heading {
+    margin-left: 60px;
+  }
+  .about-title {
+    margin-left: 80px;
+    font-size: 34px;
+  }
+  .about-content {
+    margin: 50px 60px 0;
+    gap: 30px;
+  }
+  .exp-num {
+    font-size: 150px;
+  }
+  .exp-label {
+    font-size: 16px;
+    letter-spacing: 12px;
+  }
+  .about-divider {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-heading {
+    margin-left: 30px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .about-title {
+    margin-left: 0;
+    font-size: 28px;
+  }
+  .about-sub {
+    font-size: 13px;
+  }
+
+  /* Stack vertically */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 30px 0;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .exp-num {
+    font-size: 120px;
+  }
+  .exp-label {
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+
+  .about-desc,
+  .about-goal {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .about-btns {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-divider {
+    margin: 0 20px;
+  }
+}
+
+/* ── MOBILE (max 600px) ── */
+@media (max-width: 600px) {
+  .about-section {
+    margin-top: 70px;
+  }
+  .about-heading {
+    margin-left: 20px;
+    width: 92%;
+    margin-bottom: 20px;
+  }
+  .about-title {
+    font-size: 22px;
+    margin-left: 0;
+  }
+  .about-sub {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    margin: 30px 20px 0;
+    gap: 10px;
+  }
+
+  .exp-num {
+    font-size: 80px;
+  }
+  .exp-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+  .about-desc {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .about-goal {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-top: 16px;
+  }
+
+  .about-btns {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .about-divider {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .exp-num {
+    font-size: 60px;
+  }
+  .exp-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .about-title {
+    font-size: 18px;
+  }
+}

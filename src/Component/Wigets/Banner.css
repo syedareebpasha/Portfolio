@@ -1,0 +1,58 @@
+*{
+    font-family: "oswald";
+}
+.banner-wrapper {
+  overflow: hidden;
+  background: #fff; 
+  white-space: nowrap;
+  margin-top: 100px;
+  padding: 20px 0;
+}
+
+.banner-scroll {
+  display: inline-block;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.banner-scroll span {
+  display: inline-block;
+  color: black;
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 40px;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 1024px) {
+  .banner-scroll span {
+    font-size: 22px;
+    margin-right: 30px;
+  }
+  .banner-scroll {
+    animation-duration: 18s;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-scroll span {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .banner-scroll {
+    animation-duration: 15s;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-scroll span {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .banner-scroll {
+    animation-duration: 12s;
+  }
+}
