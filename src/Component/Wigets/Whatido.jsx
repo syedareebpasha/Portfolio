@@ -3,9 +3,9 @@ import "./Whatido.css"
 import { TfiLineDouble } from "react-icons/tfi"
 import IconDiv from '../Shared/IconDiv'
 import Card from '../Shared/Card'
-import Mobileapp  from "../../Assets/mobileapp.png"
-import Website    from "../../Assets/website.png"
-import Ecommerce  from "../../Assets/Ecommerce.png"
+import Mobileapp  from "../../assets/mobileapp.png"
+import Website    from "../../assets/website.png"
+import Ecommerce  from "../../assets/Ecommerce.png"
 import { FaLocationArrow } from "react-icons/fa"
 
 const services = [
