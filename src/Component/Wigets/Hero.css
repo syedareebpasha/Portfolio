@@ -30,13 +30,7 @@
   z-index: 2;
 }
 
-/* .my-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-margin-right: 100px;
-margin-bottom: 50px;
-} */
+
 
 @media (max-width: 900px) {
   .hero-container {
@@ -166,11 +160,7 @@ box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
   left: -50%;
   width: 200%;
   height: 200%;
-  /* background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2) 10%,
-    transparent 40%
-  ); */
+  
   animation: pulse 2s infinite;
 }
 
@@ -198,14 +188,7 @@ box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
 .my-img .my-pic{
 border-radius: 50%;
 }
-/* .my-img {
-border-radius: 50%;
-  height: 100px;
-  width: 150px;
-  /* margin-top: 50px; */
-  /* margin-bottom: 100px; */
-  /* margin-right: 100px; */
-*/
+
 
 .my-pic{border-radius: 100%;}
 
