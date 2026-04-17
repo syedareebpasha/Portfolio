@@ -5,10 +5,15 @@
 }
 .project-heading{
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
     margin-bottom: 40px;
 }
-
+#Project{
+  margin-top: 100px;
+  color: black;
+  font-weight: bold;
+}
 .project-card {
   position: relative;
   width: 100%;

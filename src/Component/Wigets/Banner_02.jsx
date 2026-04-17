@@ -8,25 +8,25 @@ const Banner_02 = () => {
     <div className="banner-wrapper">
       <div className="banner-scroll">
         <span>MY EXPERIENCE</span>
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE</span>
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
 
         <span>MY EXPERIENCE</span>
 
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE</span>
 
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE</span>
 
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE</span>
 
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE</span>
 
-        <span><IconDiv icon={MdOutlineStarRate} color={"black"} size={40}/></span>
+        <span><IconDiv icon={MdOutlineStarRate} color={"white"} size={40}/></span>
         <span>MY EXPERIENCE </span>
       </div>
     </div>

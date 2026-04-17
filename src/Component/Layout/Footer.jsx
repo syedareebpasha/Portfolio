@@ -12,10 +12,9 @@ const Footer = () => {
          <footer className="footer">
   <div className="footer-container">
     <div className="footer-img">
-      <img src={img} alt="Logo" />
+      <img className='footer-image' src={img} alt="Logo" />
       <span className="footer-logo-text">REEB</span>
     </div>
-
     <div className="footer-heading">
       <h1>LET'S WORK TOGETHER</h1>
     </div>
@@ -33,10 +32,10 @@ const Footer = () => {
     </div>
 
     <div className="icon-container">
-      <a href="#"><IconDiv color="white" icon={FaFacebook} /></a>
-      <a href="#"><IconDiv color="white" icon={IoLogoWhatsapp} /></a>
-      <a href="#"><IconDiv color="white" icon={FaGithubSquare} /></a>
-      <a href="#"><IconDiv color="white" icon={FaLinkedin} /></a>
+      <a href="#" target='_blank'><IconDiv color="#007bff" icon={FaFacebook} /></a>
+      <a target='_blank' href="https://wa.me/923239676627?text=Hello%20Syed%2C%20I%20saw%20your%20portfolio!"><IconDiv color="green" icon={IoLogoWhatsapp} /></a>
+      <a target='_blank' href="https://github.com/syedareebpasha"><IconDiv color="black" icon={FaGithubSquare} /></a>
+      <a target='_blank' href="https://www.linkedin.com/in/syed-areeb-pasha-3028b1384/"><IconDiv color="#007bff" icon={FaLinkedin} /></a>
     </div>
   </div>
 

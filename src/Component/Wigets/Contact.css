@@ -10,7 +10,10 @@
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
-
+.contact-right{
+  background-image: url(./../../assets/bg-contact.png);
+  border-radius: 25px;
+}
 .contact-right img {
   width: 450px;
   height: auto;
@@ -25,9 +28,12 @@
 
 .contact-title {
   font-size: 32px;
+  margin-left: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #007bff;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+
 }
 
 .contact-form {
@@ -56,7 +62,7 @@
 }
 
 .contact-btn {
-  background: linear-gradient(90deg, #007bff, #00c6ff);
+  background: linear-gradient(90deg, #007bff);
   color: white;
   padding: 14px 28px;
   border: none;

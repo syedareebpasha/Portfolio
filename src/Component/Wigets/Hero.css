@@ -6,7 +6,7 @@
 }
 .hero-container {
   position: relative;
-  background: url(../../assets/Alogo.png) center/cover no-repeat;
+  background-color:white ;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -22,7 +22,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
   z-index: 1;
 }
 
@@ -31,12 +30,13 @@
   z-index: 2;
 }
 
-.my-img {
+/* .my-img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  margin-top: 30px;
-}
+margin-right: 100px;
+margin-bottom: 50px;
+} */
 
 @media (max-width: 900px) {
   .hero-container {
@@ -76,7 +76,7 @@
   font-size: 60px;
   font-weight: 900;
   line-height: 1.1;
-  color: white;
+  color: #06141b;
 }
 
 
@@ -95,7 +95,9 @@
 .subtitle-front {
   font-size: 26px;
   font-weight: 700;
-  color: white;
+  color: #007bff;
+
+   text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
   letter-spacing: 3px;
 }
 
@@ -105,8 +107,26 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: white;
+  color: #007bff;
   letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+  cursor: pointer;
+}
+.subtitle-react span {
+  transition: all 0.3 ease-in-out;
+
+}
+.subtitle-react span:hover{
+  color: #7be2da;
+  transform: scale(1.03);
+}
+.my-pic{
+  box-shadow: none;
+  transition: all 0.3 ease-in-out;
+}
+.my-pic:hover {
+  box-shadow:  0 0 30px #007bff;
+  transform: scale(1.04);
 }
 
 .hero-btns {
@@ -119,14 +139,16 @@
 }
 
 .btn-hero {
-  background: linear-gradient(90deg, #007bff, #00c6ff);
   color: white;
+box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
   padding: 12px 28px;
+  background-color: #007bff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
   font-size: 16px;
+  /* width: 150px; */
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -144,11 +166,11 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.2) 10%,
     transparent 40%
-  );
+  ); */
   animation: pulse 2s infinite;
 }
 
@@ -171,16 +193,21 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border-radius: 50%;
 }
-
-.my-img {
-  height: 500px;
-  width: 350px;
-  margin-top: 50px;
-  object-fit: cover;
-  border-radius: 12px;
+.my-img .my-pic{
+border-radius: 50%;
+}
+/* .my-img {
+border-radius: 50%;
+  height: 100px;
+  width: 150px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 100px; */
   /* margin-right: 100px; */
-}
+*/
+
+.my-pic{border-radius: 100%;}
 
 @media (max-width: 1400px) {
   .heading-hero {
@@ -196,6 +223,7 @@
   }
   .my-img {
     height: 430px;
+    margin-right: none;
     width: 300px;
   }
 }
@@ -292,6 +320,7 @@
     width: 200px;
     margin-top: 30px;
     margin-right: none;
+  margin-left: 100px;
   }
 }
 
@@ -328,6 +357,9 @@
   }
   .my-img {
     margin-top: 0;
+    margin-right: none;
     height: 380px;
   width: 190px;
+  margin-left: 100px;
+
   }}

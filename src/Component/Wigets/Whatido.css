@@ -1,7 +1,7 @@
 .whatido-container {
   width: 100%;
   min-height: 100vh;
-  background-color: #000;
+  background: #f8f9ff;
   margin-top: 150px;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@
 
 .sub-whatido {
   font-size: 20px;
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -31,7 +31,7 @@
 
 .heading-whatido {
   font-size: 180px;
-  color: #fff;
+  color: black;
   line-height: 1.1;
   font-weight: 900;
   letter-spacing: -4px;
@@ -43,6 +43,10 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+.service-card:hover{
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+
 }
 
 .service-card {
@@ -58,7 +62,8 @@
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px #007bff;
+
 }
 
 .card-img {

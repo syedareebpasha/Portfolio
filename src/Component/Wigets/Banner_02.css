@@ -3,7 +3,7 @@
 }
 .banner-wrapper {
   overflow: hidden;
-  background: #fff; 
+  background: #06141b; 
   white-space: nowrap;
   margin-top: 100px;
   padding: 20px 0;
@@ -16,7 +16,7 @@
 
 .banner-scroll span {
   display: inline-block;
-  color: black;
+  color: white;
   font-size: 38px;
   font-weight: 600;
   margin-right: 40px;

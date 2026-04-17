@@ -24,7 +24,7 @@ const projects = [
 const Project = () => {
   return (
     <div id='Project'>
-        <h1 className='project-heading'>MY PROJECTS</h1>
+        <h1 className='project-heading'>MY <span style={{borderBottom:'5px solid #007bff'}}>PROJECTS</span></h1>
     <div className="project-list">
       {projects.map((project, index) => (
         <Projectcard

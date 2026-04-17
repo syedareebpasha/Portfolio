@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-    background-color: black;
+    /* background-color: black; */
     color: white;
     /* font-family: "oswald", sans-serif; */
+    scroll-behavior: smooth;
 }

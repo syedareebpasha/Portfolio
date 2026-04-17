@@ -32,10 +32,10 @@ const Whatido = () => {
 
       <div className="whatido-left">
         <h5 className="sub-whatido">
-          <IconDiv color="white" icon={TfiLineDouble} size={25} />
-          WHAT I DO
+          <IconDiv color="#007bff" icon={TfiLineDouble} size={25} />
+          <div style={{borderBottom:'4px solid #007bff'}}>WHAT I DO</div>
         </h5>
-        <h1 className="heading-whatido">BEST <br /> SERVICE</h1>
+        <h1 className="heading-whatido">BEST <br /><span style={{borderBottom:'5px solid #007bff'}}> SERVICE</span></h1>
       </div>
 
       <div className="services">

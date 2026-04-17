@@ -4,7 +4,7 @@ import img from '../../assets/Alogo.png'
 const Contact = () => {
   return (
    <div className="contact-container" id='Contact'> 
-  <div className="contact-right">
+  <div className="contact-right" >
     <img src={img} alt="Logo" />
   </div>
 

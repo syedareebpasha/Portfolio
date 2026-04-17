@@ -13,15 +13,21 @@ const Hero = () => {
     <div className="hero-container">
 
       <div className="hero-left">
-        <h1 className="heading-hero">BUILDING DIGITAL SOLUTIONS</h1>
+        <h1 className="heading-hero" style={{fontSize:'80px', marginTop:'60px', fontWeight:'bolder'}}>BUILDING <br /> <span style={{color:'#007bff', fontSize:'80px', textShadow:'0 0 10px rgba(0, 198, 255, 0.4)'}}>DIGITAL</span> <br />SOLUTIONS</h1>
 
         <div className="subtitle">
           <h5 className="subtitle-front">FRONT END DEVELOPER</h5>
           <h5 className="subtitle-react">
-            <IconDiv icon={IoIosArrowBack} />
+           <div style={{display:'flex', alignItems:'center', gap:'-10px'}}>
+            <IconDiv icon={IoIosArrowBack} color={"#06141b"} size={25} />
+            </div>
+            <span style={{transition:'all 0.3 ease-in-out'}}>
             REACT DEVELOPER
-            <IconDiv icon={RxSlash} />
-            <IconDiv icon={IoIosArrowForward} />
+</span>
+            <IconDiv icon={RxSlash} color={"#06141b"} size={25}/>
+
+            <IconDiv icon={IoIosArrowForward} color={"#06141b"} size={25}/>
+
           </h5>
         </div>
 
@@ -38,7 +44,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-right">
-        <img className="my-img" src={img} alt="Areeb Pasha" />
+        <img className="my-pic duration-300 delay-75" style={{borderRadius:'50%', marginRight:'100px'}} src={img} alt="Areeb Pasha" />
       </div>
 
     </div>

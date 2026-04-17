@@ -1,56 +1,100 @@
-.card {
-  background: linear-gradient(135deg, #ffffff, #f0f4ff);
-  border: 2px solid #e0e0e0;
-  height: 220px;
-  width: 200px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  flex-shrink: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.skill-section {
+  width: 100%;
+  padding: 100px 0 80px;
+  background: #f8f9ff;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
-.card:hover {
-  transform: translateY(-8px) scale(1.08);
+.skill-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 1rem;
 }
 
-.card h1 {
-  margin: 0;
+.skill-chip {
+  display: inline-block;
+  background: #eef2ff;
+  color: blue;
+  font-size: 0.72rem;
   font-weight: 700;
-  color: #007bff;
-  font-size: 36px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.35rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid #c7d2fe;
+  margin-bottom: 1rem;
 }
 
-.card h5 {
-  margin: 10px 0;
-  font-weight: 600;
-  color: #333;
-  font-size: 18px;
-  letter-spacing: 1px;
+.skill-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #0f0f1a;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.skill-title-accent {
+  color: blue;
+  position: relative;
+}
+
+.skill-title-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #818cf8);
+  border-radius: 2px;
+}
+
+.skill-sub {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.skill-divider {
+  width: 48px;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #818cf8);
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .carousel {
   overflow: hidden;
   width: 100%;
-  padding: 20px 0 30px;
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  padding: 20px 0 40px;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
 }
 
-.card-container {
+.card-track {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   width: max-content;
-  animation: scrollLeft 25s linear infinite;
+  animation: scrollLeft 28s linear infinite;
 }
 
-.card-container:hover {
+.card-track:hover {
   animation-play-state: paused;
 }
 
@@ -59,35 +103,171 @@
   100% { transform: translateX(-50%); }
 }
 
+.card {
+  width: 170px;
+  padding: 1.6rem 1rem 1.2rem;
+  background: #ffffff;
+  border: 1px solid #e8eaf6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.04),
+    0 4px 16px rgba(79,70,229,0.06);
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s ease,
+    border-color 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--icon-color, #4f46e5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(79, 70, 229, 0.05) 0%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.04);
+  border-color: #c7d2fe;
+  box-shadow:
+    0 8px 32px rgba(79,70,229,0.14),
+    0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card:hover::before { opacity: 1; }
+.card:hover::after  { opacity: 1; }
+
+.card-icon-wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background: #f5f7ff;
+  border: 1px solid #e8eaf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .card-icon-wrap {
+  transform: scale(1.12) rotate(-4deg);
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  box-shadow: 0 4px 16px rgba(79,70,229,0.15);
+}
+
+.card-pct {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.card-bar-wrap {
+  width: 100%;
+  height: 5px;
+  background: #e8eaf6;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.card-bar {
+  height: 100%;
+  width: var(--bar-width, 80%);
+  background: var(--bar-color, #4f46e5);
+  border-radius: 10px;
+  position: relative;
+  animation: barFill 1.2s ease both;
+}
+
+.card-bar::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -60%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  animation: barShimmer 2.5s ease-in-out infinite 1.2s;
+}
+
+@keyframes barFill {
+  from { width: 0; }
+  to   { width: var(--bar-width, 80%); }
+}
+
+@keyframes barShimmer {
+  0%   { left: -60%; }
+  100% { left: 140%; }
+}
+
+/* ── SKILL NAME ── */
+.card-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.card:hover .card-name {
+  color: #4f46e5;
+}
+
+
 @media (max-width: 1024px) {
-  .card {
-    height: 200px;
-    width: 170px;
-  }
-  .card h1 { font-size: 28px; }
-  .card h5 { font-size: 16px; }
+  .card { width: 150px; padding: 1.4rem 0.9rem 1rem; }
+  .card-icon-wrap { width: 58px; height: 58px; }
+  .card-pct { font-size: 1.3rem; }
 }
 
 @media (max-width: 768px) {
-  .carousel {
-    padding: 10px 0;
-  }
-  .card-container {
-    animation: scrollLeft 20s linear infinite; 
-  }
-  .card-container:hover {
-  animation-play-state: paused;
+  .skill-section { padding: 70px 0 60px; }
+  .skill-heading { margin-bottom: 40px; }
+  .card-track { animation-duration: 20s; gap: 14px; }
+  .card { width: 130px; padding: 1.2rem 0.75rem 0.9rem; border-radius: 16px; }
+  .card-icon-wrap { width: 50px; height: 50px; border-radius: 12px; }
+  .card-pct { font-size: 1.1rem; }
+  .card-name { font-size: 0.7rem; }
 }
 
-@keyframes scrollLeft {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-  .card {
-    height: 180px;
-    width: 150px;
-    margin-bottom: 20px;
-  }
-  .card h1 { font-size: 24px; }
-  .card h5 { font-size: 14px; }
+@media (max-width: 480px) {
+  .skill-title { font-size: 2rem; }
+  .card-track { animation-duration: 16s; gap: 12px; }
+  .card { width: 115px; padding: 1rem 0.6rem 0.8rem; }
+  .card-icon-wrap { width: 44px; height: 44px; }
+  .card-pct { font-size: 1rem; }
+  .card-name { font-size: 0.65rem; }
 }

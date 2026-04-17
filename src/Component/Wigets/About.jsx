@@ -12,7 +12,7 @@ const About = () => {
 
       <div className="about-heading">
         <h3 className="about-sub">
-          <IconDiv color="white" icon={GiPolarStar} />
+          <IconDiv color="white" icon={GiPolarStar} color={"black"} />
           KNOW MORE ABOUT ME
         </h3>
         <h1 className="about-title">Get To Know Me</h1>
