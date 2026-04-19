@@ -51,7 +51,7 @@
     margin-right: 0;
     gap: 10px;
   }
-  .my-img {
+  .my-pic {
     width: 70%;
     height: auto;
   }
@@ -190,7 +190,9 @@ border-radius: 50%;
 }
 
 
-.my-pic{border-radius: 100%;}
+.my-pic{border-radius: 100%;
+margin-right:100px;
+}
 
 @media (max-width: 1400px) {
   .heading-hero {
@@ -204,7 +206,7 @@ border-radius: 50%;
   .subtitle-react {
     font-size: 18px;
   }
-  .my-img {
+  .my-pic {
     height: 430px;
     margin-right: none;
     width: 300px;
@@ -229,7 +231,7 @@ border-radius: 50%;
   .subtitle-react {
     font-size: 16px;
   }
-  .my-img {
+  .my-pic {
     height: 380px;
     width: 260px;
     margin-right: none;
@@ -253,7 +255,7 @@ border-radius: 50%;
   .subtitle-react {
     font-size: 15px;
   }
-  .my-img {
+  .my-pic {
     height: 340px;
     width: 230px;
     margin-right: none;
@@ -298,7 +300,7 @@ border-radius: 50%;
     font-size: 14px;
     margin-top: 30px;
   }
-  .my-img {
+  .my-pic {
     height: 280px;
     width: 200px;
     margin-top: 30px;
@@ -338,11 +340,12 @@ border-radius: 50%;
     font-size: 13px;
     margin-top: 20px;
   }
-  .my-img {
+  .my-pic {
     margin-top: 0;
     margin-right: none;
     height: 380px;
   width: 190px;
+  border-radius: 20px;
   margin-left: 100px;
 
   }}

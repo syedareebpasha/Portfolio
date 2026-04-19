@@ -1,12 +1,12 @@
 import React from 'react'
 import './Project.css'
 import { FaLocationArrow } from "react-icons/fa"
-import img1 from '../../assets/project01.jpg'
-import img2 from '../../assets/project02.jpg'
-import img3 from '../../assets/project03.jpg'
-import img4 from '../../assets/project04.jpg'
-import img5 from '../../assets/project05.jpg'
-import img6 from '../../assets/project06.jpg'
+import img1 from '../../assets/project01.png'
+import img2 from '../../assets/project02.png'
+import img3 from '../../assets/project03.png'
+import img4 from '../../assets/project04.png'
+import img5 from '../../assets/project05.png'
+import img6 from '../../assets/project06.png'
 
 import Projectcard from '../Shared/Projectcard'
 import { div } from 'motion/react-client'

@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-right">
-        <img className="my-pic duration-300 delay-75" style={{borderRadius:'50%', marginRight:'100px'}} src={img} alt="Areeb Pasha" />
+        <img className="my-pic duration-300 delay-75" src={img} alt="Areeb Pasha" />
       </div>
 
     </div>
