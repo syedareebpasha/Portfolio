@@ -26,8 +26,8 @@ const Footer = () => {
     <div className="contact-info">
       <h4>CONTACT ME</h4>
       <div className="contact-details">
-        <h5>03239676627</h5>
-        <h5 style={{letterSpacing:'1px'}}>syedareebpasha9999@gmail.com</h5>
+        <a href="" style={{textDecoration:'none', color:'black'}}><h5>03239676627</h5></a>
+        <a href="" style={{textDecoration:'none', color:'black'}}><h5 style={{letterSpacing:'1px'}}> syedareebpasha9999@gmail.com</h5></a>
       </div>
     </div>
 

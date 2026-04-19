@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 .about-section {
   margin-top: 100px;
   width: 100%;
+  background: #ffffff;
 }
 
 .about-heading {
-  color: white;
   margin-left: 100px;
   margin-bottom: 50px;
   width: 85%;
@@ -14,20 +16,27 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #007bff;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #2563eb;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .about-title {
   margin-left: 150px;
-  font-size: 40px;
-  color: black;
-  border-bottom: 5px solid #007bff;
+  font-size: 38px;
+  color: #06141b;
+  font-weight: 700;
+  letter-spacing: -1px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 .about-divider {
-  border-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-top: 1px solid #e5e7eb;
   margin: 0 60px;
 }
 
@@ -50,21 +59,24 @@
 .exp-num {
   font-size: 200px;
   line-height: 1;
-  color: white;
-    text-shadow: 0 0 500px #007bff;
-  font-weight: 700;
+  color: #2563eb;
+  text-shadow: none;
+  font-weight: 800;
+  letter-spacing: -8px;
 }
 
 .exp-plus {
-  color: black;
+  color: #2563eb;
 }
 
 .exp-label {
-  font-size: 20px;
-  letter-spacing: 20px;
-  color: #a5a2a2;
+  font-size: 17px;
+  letter-spacing: 10px;
+  color: #6b7280;
   text-align: center;
   line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about-text {
@@ -72,21 +84,24 @@
 }
 
 .about-desc {
-  color: #a5a2a2;
-  letter-spacing: 2px;
-  font-size: 16px;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+  font-size: 15px;
   line-height: 1.9;
 }
 
 .about-goal {
-  color: black;
-  letter-spacing: 2px;
-  font-size: 15px;
+  border-left: 3px solid #2563eb;
+  padding: 12px 16px;
+  color: #374151;
+  background: #f8faff;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
   line-height: 1.9;
-  margin-top: 30px;
+  letter-spacing: 0.3px;
+  margin-top: 24px;
 }
 
-/* ── BUTTONS ── */
 .about-btns {
   display: flex;
   align-items: center;
@@ -95,13 +110,14 @@
   margin-top: 50px;
 }
 
+/* Responsive */
 @media (max-width: 1200px) {
   .about-heading {
     margin-left: 60px;
   }
   .about-title {
     margin-left: 80px;
-    font-size: 34px;
+    font-size: 32px;
   }
   .about-content {
     margin: 50px 60px 0;
@@ -111,8 +127,8 @@
     font-size: 150px;
   }
   .exp-label {
-    font-size: 16px;
-    letter-spacing: 12px;
+    font-size: 14px;
+    letter-spacing: 8px;
   }
   .about-divider {
     margin: 0 40px;
@@ -127,13 +143,11 @@
   }
   .about-title {
     margin-left: 0;
-    font-size: 28px;
+    font-size: 26px;
   }
   .about-sub {
-    font-size: 13px;
+    font-size: 12px;
   }
-
-  /* Stack vertically */
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -141,32 +155,31 @@
     gap: 20px;
     text-align: center;
   }
-
   .exp-num {
     font-size: 120px;
+    letter-spacing: -4px;
   }
   .exp-label {
-    font-size: 14px;
-    letter-spacing: 8px;
+    font-size: 13px;
+    letter-spacing: 6px;
   }
-
   .about-desc,
   .about-goal {
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
   }
-
+  .about-goal {
+    text-align: left;
+  }
   .about-btns {
     gap: 20px;
     flex-wrap: wrap;
   }
-
   .about-divider {
     margin: 0 20px;
   }
 }
 
-/* ── MOBILE (max 600px) ── */
 @media (max-width: 600px) {
   .about-section {
     margin-top: 70px;
@@ -182,39 +195,33 @@
   }
   .about-sub {
     font-size: 11px;
-    letter-spacing: 1px;
+    letter-spacing: 0.08em;
   }
-
   .about-content {
     flex-direction: column;
     margin: 30px 20px 0;
     gap: 10px;
   }
-
   .exp-num {
     font-size: 80px;
+    letter-spacing: -3px;
   }
   .exp-label {
     font-size: 11px;
     letter-spacing: 4px;
   }
-
   .about-desc {
     font-size: 13px;
-    letter-spacing: 0.5px;
   }
   .about-goal {
     font-size: 13px;
-    letter-spacing: 0.5px;
     margin-top: 16px;
   }
-
   .about-btns {
     flex-direction: column;
     gap: 15px;
     margin-top: 30px;
   }
-
   .about-divider {
     margin: 0 15px;
   }
@@ -223,10 +230,11 @@
 @media (max-width: 380px) {
   .exp-num {
     font-size: 60px;
+    letter-spacing: -2px;
   }
   .exp-label {
     font-size: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
   .about-title {
     font-size: 18px;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 .whatido-container {
   width: 100%;
   min-height: 100vh;
@@ -20,21 +22,23 @@
 }
 
 .sub-whatido {
-  font-size: 20px;
-  color: black;
+  font-size: 14px;
+  color: #6b7280;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   margin-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .heading-whatido {
-  font-size: 180px;
-  color: black;
-  line-height: 1.1;
-  font-weight: 900;
-  letter-spacing: -4px;
+  font-size: 160px;
+  color: #06141b;
+  line-height: 1.0;
+  font-weight: 800;
+  letter-spacing: -6px;
 }
 
 .services {
@@ -44,58 +48,63 @@
   justify-content: center;
   gap: 16px;
 }
-.service-card:hover{
-    box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
-
-}
 
 .service-card {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #06141b;
   width: 380px;
   padding: 24px;
   border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid #e5e5e5;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-left-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e5e7eb;
+  border-left: 3px solid transparent;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 10px #007bff;
-
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.12);
+  border-left-color: #2563eb;
 }
 
 .card-img {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  margin-bottom: 12px;
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  display: block;
 }
 
 .service-card h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   gap: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
+  color: #06141b;
 }
 
 .service-card p {
   font-size: 0.85rem;
-  color: #555;
-  line-height: 1.7;
+  color: #6b7280;
+  line-height: 1.8;
+  margin: 0;
 }
 
-
+/* Responsive */
 @media (max-width: 1400px) {
   .heading-whatido {
-    font-size: 140px;
-    letter-spacing: -3px;
+    font-size: 130px;
+    letter-spacing: -4px;
   }
   .whatido-container {
     padding: 60px 60px;
@@ -107,8 +116,8 @@
 
 @media (max-width: 1200px) {
   .heading-whatido {
-    font-size: 110px;
-    letter-spacing: -2px;
+    font-size: 108px;
+    letter-spacing: -3px;
   }
   .whatido-container {
     padding: 60px 40px;
@@ -122,7 +131,7 @@
 
 @media (max-width: 1024px) {
   .heading-whatido {
-    font-size: 90px;
+    font-size: 86px;
     letter-spacing: -2px;
   }
   .whatido-container {
@@ -132,7 +141,7 @@
     width: 280px;
   }
   .sub-whatido {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
@@ -149,12 +158,12 @@
   }
   .heading-whatido {
     font-size: 100px;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     line-height: 1.0;
   }
   .sub-whatido {
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
   }
   .services {
     flex-direction: row;
@@ -174,12 +183,12 @@
     min-height: auto;
   }
   .heading-whatido {
-    font-size: 70px;
-    letter-spacing: -1.5px;
+    font-size: 68px;
+    letter-spacing: -2px;
   }
   .sub-whatido {
-    font-size: 13px;
-    gap: 10px;
+    font-size: 12px;
+    gap: 8px;
   }
   .services {
     flex-direction: column;
@@ -191,7 +200,7 @@
     padding: 18px;
   }
   .service-card h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .service-card p {
     font-size: 0.8rem;
@@ -201,7 +210,7 @@
 @media (max-width: 380px) {
   .heading-whatido {
     font-size: 52px;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
   }
   .sub-whatido {
     font-size: 11px;
