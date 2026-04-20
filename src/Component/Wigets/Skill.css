@@ -103,7 +103,7 @@
   100% { transform: translateX(-50%); }
 }
 
-.html, .css, .javascript, .bootstrap, .tailwind, .git, .github, .netlify, .vs-code {
+.html, .css, .javascript, .bootstrap, .tailwind, .git, .github, .netlify, .vs-code, .react {
   width: 170px;
   padding: 1.6rem 1rem 1.2rem;
   background: #ffffff;
