@@ -10,8 +10,11 @@ import { FaGitSquare }       from "react-icons/fa"
 import { FaGithubSquare }    from "react-icons/fa"
 import { VscVscodeInsiders } from "react-icons/vsc"
 import { SiNetlify }         from "react-icons/si"
+import { FaReact } from "react-icons/fa6";
+import { color } from 'framer-motion'
 
 const skills = [
+  {icon: FaReact,             pct: '50%' , name: 'React',       color:'#61dafb', classNmae: 'react'},
   { icon: IoLogoHtml5,       pct: '95%', name: 'HTML5',       color: '#e34f26', className:'html' },
   { icon: FaCss3Alt,         pct: '90%', name: 'CSS3',        color: '#2965f1' , className:'css'},
   { icon: IoLogoJavascript,  pct: '70%', name: 'JavaScript',  color: '#f7df1e' ,className:'javascript'},
