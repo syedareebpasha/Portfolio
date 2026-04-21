@@ -10,12 +10,14 @@ import Project from '../src/Component/Wigets/Project.jsx'
 import Banner_02 from '../src/Component/Wigets/Banner_02.jsx'
 import Contact from '../src/Component/Wigets/Contact.jsx'
 import Footer from '../src/Component/Layout/Footer.jsx'
+// import Project02 from './Component/Wigets/Project02.jsx'
 const App = () => {
   return (
     <div>
  <Navbar/>     
  <Hero/>
 <Project/>
+{/* <Project02/> */}
  <Banner/>
  <Skill/>
 <Whatido/>
