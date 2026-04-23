@@ -1,15 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap'); */
 
 #Project {
   margin-top: 100px;
   color: #06141b;
 }
 
-.project-heading {
+.project-heading, .project-heading span {
   text-align: center;
-  font-family:  sans-serif;
+  font-family:  "syne";
   font-size: 52px;
-  /* font-weight: 800; */
+  font-weight: 800;
   margin-bottom: 40px;
   color: #06141b;
   letter-spacing: -2px;
@@ -18,7 +17,7 @@
 
 .project-heading span {
   border-bottom: 5px solid #007bff;
-  color: #007bff;
+  /* color: #007bff; */
 }
 
 .project-list {
@@ -40,15 +39,16 @@
     gap: 20px;
     padding: 0 16px;
   }
-  .project-heading {
-    font-size: 38px;
+  .project-heading, .project-heading span {
+    font-size: 34px;
     letter-spacing: -1.5px;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .project-heading {
-    font-size: 28px;
+  .project-heading, .project-heading span {
+    font-size: 22px;
     letter-spacing: -1px;
   }
 }

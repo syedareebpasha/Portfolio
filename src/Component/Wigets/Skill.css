@@ -32,6 +32,7 @@
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: #06141b;
+  font-family: "SYNE";
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin-bottom: 0.75rem;
@@ -40,6 +41,7 @@
 .skill-title-accent {
   color: #2563eb;
   position: relative;
+font-family: "syne";
 }
 
 .skill-title-accent::after {

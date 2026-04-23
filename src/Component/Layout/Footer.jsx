@@ -12,8 +12,8 @@ const Footer = () => {
          <footer className="footer">
   <div className="footer-container">
     <div className="footer-img">
-      <img className='footer-image' src={img} alt="Logo" />
-      <span className="footer-logo-text">REEB</span>
+      {/* <img className='footer-image' src={img} alt="Logo" /> */}
+      <span className="footer-logo-text">AREEB.</span>
     </div>
     <div className="footer-heading">
       <h1>LET'S WORK TOGETHER</h1>

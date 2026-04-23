@@ -17,8 +17,10 @@
 .banner-scroll span {
   display: inline-block;
   color: black;
+  font-family: "syne";
+
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 800;
   margin-right: 40px;
 }
 

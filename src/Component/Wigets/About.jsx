@@ -24,9 +24,9 @@ const About = () => {
 
         <div className="about-exp">
           <h1 className="exp-num">
-            05<span className="exp-plus">+</span>
+            FRESHER
           </h1>
-          <h5 className="exp-label">MONTHS OF <br /> EXPERIENCE</h5>
+          {/* <h5 className="exp-label">MONTHS OF <br /> EXPERIENCE</h5> */}
         </div>
 
         <div className="about-text">

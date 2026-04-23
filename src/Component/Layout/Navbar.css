@@ -67,7 +67,7 @@ body {
   padding-bottom: 4px;
 }
 
-.nav-links li a::after {
+/* .nav-links li a::after {
   content: '';
   display: block;
   position: absolute;
@@ -80,7 +80,7 @@ body {
   transform-origin: left;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
-}
+} */
 
 .nav-links li a:hover {
   color: #2563eb;

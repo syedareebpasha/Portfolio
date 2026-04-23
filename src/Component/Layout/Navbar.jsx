@@ -5,9 +5,9 @@ import Alogo from '../../assets/Alogo.png'
 const Navbar = () => {
   return (
      <nav class="navbar">
-    <div className='logo-text'>    
-      <img class="logo" style={{backgroundColor:'#007bff'}} src={Alogo} alt=""/>
-   <span> REEB</span>
+    <div className='logo-text' >    
+      {/* <img class="logo"  src={Alogo} alt=""/> */}
+   <span style={{fontFamily:'syne'}}> AREEB.</span>
 </div>
 
     <input type="checkbox" id="menu-toggle"/>
@@ -19,8 +19,10 @@ const Navbar = () => {
       <li><a href="#Project">Project</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Contact">Contact</a></li>
-    </ul>
+      <li>
   <a href="#Contact"><Button text="Hire Me" className="btn" /></a>
+      </li>
+    </ul>
 
   </nav>
   )

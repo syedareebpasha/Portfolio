@@ -16,6 +16,7 @@
   background-image: url(./../../assets/bg-contact.png);
   border-radius: 20px;
   flex-shrink: 0;
+  margin-top: 65px;
 }
 
 .contact-right img {
@@ -31,11 +32,13 @@
 }
 
 .contact-title {
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 20px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 24px;
-  color: #2563eb;
+  font-family: "syne";
+  color: black;
+  /* border-bottom: 5px soild #2563eb; */
   letter-spacing: -0.5px;
   text-shadow: none;
 }

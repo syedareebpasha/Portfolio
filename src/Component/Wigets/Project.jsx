@@ -42,8 +42,8 @@ const projects = [
   },
   {
     image: img5,
-    title: "UI/UX Design",
-    description: "End-to-end product design with user research, wireframes, prototypes and high-fidelity Figma designs.",
+    title: "Saylani SMIT Landing Page",
+    description: "Landging page of Saylani SMIT website built with Reactjs and css",
     tag: "UI/UX",
     liveUrl: "https://your-live-url.com",
     githubUrl: "https://github.com/yourusername/uiux-design"
@@ -61,7 +61,7 @@ const projects = [
 const Project = () => {
   return (
     <div id="Project">
-      <h1 className="project-heading">My <span>Projects</span></h1>
+      <h1 className="project-heading">MY <span>PROJECTS</span></h1>
       <div className="project-list">
         {projects.map((project, index) => (
           <Projectcard

@@ -33,12 +33,16 @@
   font-weight: 500;
 }
 
-.heading-whatido {
-  font-size: 160px;
+.heading, .heading span {
+  font-size: 80px;
   color: #06141b;
   line-height: 1.0;
-  font-weight: 800;
+  font-family: "syne";
+  font-weight: 750;
   letter-spacing: -6px;
+}
+.heading span {
+  border-bottom: 5px solid #2563eb;
 }
 
 .services {
@@ -102,8 +106,8 @@
 
 /* Responsive */
 @media (max-width: 1400px) {
-  .heading-whatido {
-    font-size: 130px;
+  .heading, .heading span {
+    font-size: 80px;
     letter-spacing: -4px;
   }
   .whatido-container {
@@ -115,8 +119,8 @@
 }
 
 @media (max-width: 1200px) {
-  .heading-whatido {
-    font-size: 108px;
+  .heading, .heading span {
+    font-size: 70px;
     letter-spacing: -3px;
   }
   .whatido-container {
@@ -130,8 +134,8 @@
 }
 
 @media (max-width: 1024px) {
-  .heading-whatido {
-    font-size: 86px;
+  .heading, .heading span {
+    font-size: 60px;
     letter-spacing: -2px;
   }
   .whatido-container {
@@ -156,8 +160,8 @@
   .whatido-left {
     align-items: center;
   }
-  .heading-whatido {
-    font-size: 100px;
+  .heading, .heading span {
+    font-size: 55px;
     letter-spacing: -3px;
     line-height: 1.0;
   }
@@ -182,8 +186,8 @@
     margin-top: 60px;
     min-height: auto;
   }
-  .heading-whatido {
-    font-size: 68px;
+  .heading, .heading span {
+    font-size: 50px;
     letter-spacing: -2px;
   }
   .sub-whatido {
@@ -208,8 +212,8 @@
 }
 
 @media (max-width: 380px) {
-  .heading-whatido {
-    font-size: 52px;
+  .heading, .heading span {
+    font-size: 40px;
     letter-spacing: -1.5px;
   }
   .sub-whatido {

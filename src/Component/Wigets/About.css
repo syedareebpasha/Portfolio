@@ -57,12 +57,13 @@
 }
 
 .exp-num {
-  font-size: 200px;
+  font-size: 60px;
   line-height: 1;
-  color: #2563eb;
+  color: BLACK;
   text-shadow: none;
   font-weight: 800;
-  letter-spacing: -8px;
+  letter-spacing: -4px;
+  font-family: "syne";
 }
 
 .exp-plus {
@@ -124,7 +125,7 @@
     gap: 30px;
   }
   .exp-num {
-    font-size: 150px;
+    font-size: 60px;
   }
   .exp-label {
     font-size: 14px;
@@ -156,7 +157,7 @@
     text-align: center;
   }
   .exp-num {
-    font-size: 120px;
+    font-size: 50px;
     letter-spacing: -4px;
   }
   .exp-label {
@@ -203,7 +204,7 @@
     gap: 10px;
   }
   .exp-num {
-    font-size: 80px;
+    font-size: 40px;
     letter-spacing: -3px;
   }
   .exp-label {
@@ -229,7 +230,7 @@
 
 @media (max-width: 380px) {
   .exp-num {
-    font-size: 60px;
+    font-size: 30px;
     letter-spacing: -2px;
   }
   .exp-label {
