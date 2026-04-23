@@ -19,8 +19,9 @@ const Navbar = () => {
       <li><a href="#Project">Project</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Contact">Contact</a></li>
-      <li><a href="#Contact"><Button text="Hire Me" className="btn" /></a></li>
     </ul>
+  <a href="#Contact"><Button text="Hire Me" className="btn" /></a>
+
   </nav>
   )
 }
