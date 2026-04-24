@@ -10,10 +10,10 @@
     font-family: "syne";
 }
 .round-container{
-    border: 5px solid #ced2e0;
+    border: 3px solid #264de4;
     /* box-shadow: 8px 8px 8px #264de4; */
     opacity: 1;
-    border-top: 2px solid #264de4;
+    border-top: 5px solid #264de4;
     display: flex;
     /* border-left: 2px soild #264de4; */
     flex-direction: column;
@@ -110,6 +110,17 @@ height: auto;
     background-color: red;
     transform: rotate(360deg);
 } */
+
+@media screen and (max-width:950px)  {
+
+    .round-container{
+        padding: 200px 70px 70px 0;
+        text-align: center;
+    }
+    .hero-icon-tailwind{
+    margin-left: 690px;
+    }
+}
 
 @media screen and (max-width:900px)  {
   .hero-container{

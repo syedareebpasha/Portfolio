@@ -85,6 +85,7 @@
   line-height: 1.85;
   max-width: 600px;
   margin-left: 250px;
+  padding-block: 20px;
 }
 
 .hero-btns {
