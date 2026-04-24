@@ -1,25 +1,70 @@
 import React from 'react'
 import './Contact.css'
-import img from '../../assets/Alogo.png'
+
 const Contact = () => {
   return (
-   <div className="contact-container" id='Contact'> 
-  <div className="contact-right" >
-    <img src={img} alt="Logo" />
-  </div>
+    <div className="contact-section" id="Contact">
+      <div className="contact-card">
 
-  <div className="contact-left">
-    <h3 className="contact-title">CONTACT FORM</h3>
-    <form className="contact-form">
-      <input type="text" name="username" placeholder="Enter your name" required />
-      <input type="number" name="number" placeholder="Enter your number" required />
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <textarea name="message" placeholder="Enter your message" rows="5"></textarea>
-      <button type="submit" className="contact-btn">Send Message</button>
-    </form>
-  </div>
-</div>
+        <div className="contact-left">
+          <span className="contact-badge">Get in touch</span>
+          <h2 className="contact-heading">Let's Work<br />Together</h2>
+          <p className="contact-sub">Have a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
 
+          <div className="contact-info-item">
+            <div className="info-icon">✉</div>
+            <span>syedareebpasha9999@gmail.com</span>
+          </div>
+          <div className="contact-info-item">
+            <div className="info-icon">📞</div>
+            <span>+92 3239676627</span>
+          </div>
+          <div className="contact-info-item">
+            <div className="info-icon">📍</div>
+            <span>Karachi, Pakistan</span>
+          </div>
+
+          <div className="contact-deco">
+            <span className="deco-dot active"></span>
+            <span className="deco-dot"></span>
+            <span className="deco-dot"></span>
+          </div>
+        </div>
+
+        <div className="contact-right">
+          <p className="form-title">Send a message</p>
+          <p className="form-sub">All fields are required</p>
+
+          <form className="contact-form">
+            <div className="form-row">
+              <div className="form-field">
+                <label>Your Name</label>
+                <input type="text" placeholder="e.g. Ahmed Khan" required />
+              </div>
+              <div className="form-field">
+                <label>Phone</label>
+                <input type="tel" placeholder="+92 300 000 0000" required />
+              </div>
+            </div>
+
+            <div className="form-field">
+              <label>Email Address</label>
+              <input type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div className="form-field">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" className="contact-btn">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
   )
 }
 

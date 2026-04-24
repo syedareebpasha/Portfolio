@@ -1,115 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap');
-
-.project-card {
-  background: #06141b;
+.pc-card {
+  position: relative;
   border-radius: 16px;
   overflow: hidden;
+  aspect-ratio: 4/3;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-  display: block;
+  background: #06141b;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 24px 60px rgba(0, 123, 255, 0.2);
-}
-
-.img-wrap {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.project-img {
+.pc-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.9);
-  transition: transform 0.5s ease;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover .project-img {
-  transform: scale(1.06);
+.pc-card:hover .pc-img {
+  transform: scale(1.07);
 }
 
-.tag {
+.pc-num-badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #007bff;
-  color: #fff;
-  font-family: 'Syne', sans-serif;
+  top: 14px;
+  right: 14px;
+  background: #2563eb;
+  color: white;
   font-size: 11px;
   font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  padding: 3px 10px;
+  border-radius: 20px;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.pc-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 20, 27, 0.82);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pc-card:hover .pc-overlay {
+  opacity: 1;
+}
+
+.pc-tag {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 20px;
+  margin-bottom: 10px;
+  width: fit-content;
+  transform: translateY(12px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.04s;
 }
 
-.project-body {
-  padding: 20px 20px 18px;
-}
+.pc-card:hover .pc-tag { transform: translateY(0); }
 
-.project-title {
+.pc-title {
   font-family: 'Syne', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 8px;
-  letter-spacing: -0.3px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 7px;
+  transform: translateY(12px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.07s;
 }
 
-.project-desc {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.6;
-  margin: 0 0 18px;
+.pc-card:hover .pc-title { transform: translateY(0); }
+
+.pc-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+  transform: translateY(12px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.10s;
 }
 
-.project-links {
+.pc-card:hover .pc-desc { transform: translateY(0); }
+
+.pc-btns {
   display: flex;
   gap: 10px;
-  align-items: first baseline;
-  justify-content: start;
+  transform: translateY(12px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.13s;
 }
 
-.btn {
-  display: inline-flex;
+.pc-card:hover .pc-btns { transform: translateY(0); }
+
+.pc-btn {
+  display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
+  padding: 8px 16px;
   border-radius: 8px;
-  font-family: 'Syne', sans-serif;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  border: none;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-.btn-live {
-  background: #007bff;
+.pc-btn-live {
+  background: #2563eb;
   color: #fff;
 }
 
-.btn-live:hover {
-  background: #0069d9;
-  transform: scale(1.03);
-}
+.pc-btn-live:hover { background: #1d4ed8; }
 
-.btn-gh {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.btn-gh:hover {
+.pc-btn-gh {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
+.pc-btn-gh:hover { background: rgba(255, 255, 255, 0.25); }

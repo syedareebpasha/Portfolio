@@ -44,7 +44,7 @@ const projects = [
     image: img5,
     title: "Saylani SMIT Landing Page",
     description: "Landging page of Saylani SMIT website built with Reactjs and css",
-    tag: "UI/UX",
+    tag: "Landing Page",
     liveUrl: "https://your-live-url.com",
     githubUrl: "https://github.com/yourusername/uiux-design"
   },

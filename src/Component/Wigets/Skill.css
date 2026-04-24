@@ -491,86 +491,10 @@ font-family: "syne";
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
 }
 
-.card-pct {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #1e40af;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  position: relative;
-  z-index: 1;
-}
-
-.card-bar-wrap {
-  width: 100%;
-  height: 5px;
-  background: #e5e7eb;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-
-/* .card-bar {
-  height: 100%;
-  width: var(--bar-width, 80%);
-  background: #2563eb;
-  border-radius: 10px;
-  position: relative;
-  animation: barFill 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
-}
-
-.card-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -60%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.45);
-  animation: barShimmer 2.5s ease-in-out infinite 1.2s;
-}
-
-@keyframes barFill {
-  from { width: 0; }
-  to   { width: var(--bar-width, 80%); }
-}
-
-@keyframes barShimmer {
-  0%   { left: -60%; }
-  100% { left: 140%; }
-} */
-.card-bar {
-  height: 100%;
-  width: var(--bar-width, 80%);
-  background: var(--bar-color, #4f46e5);
-  border-radius: 10px;
-  position: relative;
-  animation: barFill 1.2s ease both;
-}
-
-.card-bar::after {
-  content: '';
-  position: absolute;
-  top: 0; left: -60%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255,255,255,0.5);
-  animation: barShimmer 2.5s ease-in-out infinite 1.2s;
-}
-
-@keyframes barFill {
-  from { width: 0; }
-  to   { width: var(--bar-width, 80%); }
-}
-
-@keyframes barShimmer {
-  0%   { left: -60%; }
-  100% { left: 140%; }
-}
 .card-name {
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: .78rem;
+  font-family: "syne";
+  font-weight: 800;
   color: #6b7280;
   letter-spacing: 0.05em;
   text-transform: uppercase;

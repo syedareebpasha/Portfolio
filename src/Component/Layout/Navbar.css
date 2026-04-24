@@ -20,6 +20,7 @@ body {
   padding: 15px 100px;
   position: fixed;
   top: 0;
+  margin-bottom: 100px;
   width: 100%;
   z-index: 999;
 }
@@ -40,10 +41,11 @@ body {
 .logo-text {
   font-size: 28px;
   display: flex;
+  font-family: "syne";
   color: #06141b;
   align-items: center;
   gap: 8px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.5px;
 }
 
@@ -59,9 +61,10 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #374151;
-  font-size: 15px;
-  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   padding-bottom: 4px;
@@ -90,14 +93,14 @@ body {
   transform: scaleX(1);
 }
 
-.btn {
+.btn-nav {
   color: #fff;
   background-color: #2563eb;
   border: none;
   border-radius: 8px;
   padding: 10px 22px;
   font-weight: 600;
-  font-size: 15px;
+  font-size:15px;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.02em;
   cursor: pointer;
@@ -108,12 +111,12 @@ body {
   overflow: hidden;
 }
 
-.btn:hover {
+.btn-nav:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
 }
 
-.btn:active {
+.btn-nav:active {
   transform: translateY(0);
 }
 
@@ -129,7 +132,7 @@ body {
   display: none;
 }
 
-@media (max-width: 768px),(max-width:900px) {
+@media (max-width: 768px),(max-width:920px) {
   .navbar {
     padding: 15px 24px;
   }

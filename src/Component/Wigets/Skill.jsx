@@ -48,13 +48,7 @@ const Skill = () => {
               >
                 <IconDiv icon={s.icon} size={44} color={s.color} />
               </div>
-              <div className="card-pct">{s.pct}</div>
-              <div className="card-bar-wrap">
-                <div
-                  className="card-bar"
-                  style={{ '--bar-color': s.color, '--bar-width': s.pct }}
-                />
-              </div>
+             
               <div className="card-name">{s.name}</div>
             </div>
           ))}
