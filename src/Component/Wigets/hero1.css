@@ -201,6 +201,6 @@ height: auto;
   .btn-hero { font-size: 13px; padding: 8px 16px; }
 }
 @media (max-width: 400px) {
-.hero-desc{ padding-left: 50px;}
-.hero-btns{ padding-right: -50px;}
+.hero-desc{ padding-left: 50px; margin-top: -10px;}
+.hero-btns{ padding-right: -50px; margin-bottom: -20px;}
 }
