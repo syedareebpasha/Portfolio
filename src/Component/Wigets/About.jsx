@@ -26,7 +26,6 @@ const About = () => {
           <h1 className="exp-num">
             FRESHER
           </h1>
-          {/* <h5 className="exp-label">MONTHS OF <br /> EXPERIENCE</h5> */}
         </div>
 
         <div className="about-text">
