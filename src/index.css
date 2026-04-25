@@ -10,3 +10,12 @@ body{
     font-family: "syne";
     scroll-behavior: smooth;
 }
+.wrapper{
+  width:90vw;
+  max-width:90vw;
+}
+.flex{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

@@ -13,13 +13,6 @@
     font-size: 45px;
     font-family: "syne";
 }
-/* .hero-btns{
-    margin-top: 20px;
-}
-.btn-1{
-    width: 180px;
-    font-size: 20px;
-} */
 .round-container{
     border: 3px solid #264de4;
     /* box-shadow: 8px 8px 8px #264de4; */
@@ -43,9 +36,6 @@ height: auto;
 }
 .round-sub{
     margin-top: 20px;
-    /* padding: 0; */
-/* display: flex; */
-/* flex-direction: column; */
 }
 .hero-icon-html{
     display: flex;
@@ -121,12 +111,7 @@ height: auto;
 .hero-icon-tailwind:hover{
     transform: scale(1.05);
 }
-/* .round-2{
-    width: 100%;
-    height: 5px;
-    background-color: red;
-    transform: rotate(360deg);
-} */
+
 @media (max-width: 1200px) {
 .hero-container{ 
            padding-top: 120px;

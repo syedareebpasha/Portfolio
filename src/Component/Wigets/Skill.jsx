@@ -28,7 +28,7 @@ const skills = [
 
 const Skill = () => {
   return (
-    <section className="skill-section" id="Skill">
+    <section className="skill-section " id="Skill">
 
       <div className="skill-heading">
         <span className="skill-chip">What I Know</span>

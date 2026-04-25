@@ -1,51 +1,67 @@
 import React from 'react'
 import "./About.css"
-import IconDiv from '../Shared/IconDiv'
-import { GiPolarStar } from "react-icons/gi"
 import Button from '../Shared/Button'
-import { FaDownload } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6"
 
+const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub']
 
 const About = () => {
   return (
     <div className="about-section" id="About">
 
-      <div className="about-heading">
-        <h3 className="about-sub">
-          <IconDiv color="white" icon={GiPolarStar} color={"black"} />
-          KNOW MORE ABOUT ME
-        </h3>
-        <h1 className="about-title">Get To Know Me</h1>
+      <div className="about-eyebrow">
+        <span className="about-eline" />
+        Know more about me
+        <span className="about-eline" />
       </div>
 
-      <hr className="about-divider" />
+      <div className="about-grid">
 
-      <div className="about-content">
-
-        <div className="about-exp">
-          <h1 className="exp-num">
-            FRESHER
-          </h1>
+        {/* LEFT — Big Number */}
+        <div className="about-left">
+          <div className="about-exp-wrap">
+            <div className="about-num-ghost">05</div>
+            <div className="about-num">05<em>+</em></div>
+          </div>
+          <div className="about-exp-info">
+            <p className="about-exp-lbl">Months Of<br />Experience</p>
+            <span className="about-exp-badge">Frontend Dev</span>
+          </div>
         </div>
 
-        <div className="about-text">
+        {/* RIGHT — Text */}
+        <div className="about-right">
+          <h1 className="about-title">
+            Get To<br />Know <em>Me.</em>
+          </h1>
+
           <p className="about-desc">
             I specialize in front-end development and love working with HTML,
-            CSS, JavaScript, and modern frameworks. I also pay deep attention
-            to UI/UX so every project not only works smoothly but also feels
-            great to use. Whether it's a landing page, portfolio, or full
-            website, I always aim for quality and performance.
+            CSS, JavaScript, and modern frameworks. I pay deep attention to
+            UI/UX so every project not only works smoothly but feels great to use.
           </p>
 
-          <p className="about-goal">
-            My goal is simple — to keep learning, improving, and creating
-            meaningful web experiences. I'm always excited to collaborate,
-            explore new technologies, and bring creative ideas to life.
-          </p>
+          <div className="about-quote">
+            <p>
+              My goal is simple — to keep learning, improving, and creating
+              meaningful web experiences. I'm always excited to collaborate,
+              explore new technologies, and bring creative ideas to life.
+            </p>
+          </div>
+
+          <div className="about-skills">
+            {skills.map((s, i) => (
+              <span className="skill-pill" key={i}>{s}</span>
+            ))}
+          </div>
 
           <div className="about-btns">
-            <Button text="KNOW MORE"     className="btn-hero" />
-            <Button text="DOWNLOAD CV" icon={FaDownload}  className="btn-hero" />
+            <Button text="Know More" className="btn-primary" />
+            <Button text="Download CV" icon={FaDownload} className="btn-outline" />
+            <div className="about-avail">
+              <span className="avail-dot" />
+              <span><strong>Available</strong> for freelance</span>
+            </div>
           </div>
         </div>
 

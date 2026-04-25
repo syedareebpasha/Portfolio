@@ -9,20 +9,17 @@ import Project from '../src/Component/Wigets/Project.jsx'
 import Banner_02 from '../src/Component/Wigets/Banner_02.jsx'
 import Contact from '../src/Component/Wigets/Contact.jsx'
 import Footer from '../src/Component/Layout/Footer.jsx'
-import Hero1 from './Component/Wigets/Hero1.jsx'
 import Testimonials from './Component/Wigets/Testimonial.jsx'
 const App = () => {
   return (
     <div>
  <Navbar/>     
- <Hero1/>
- {/* <Hero/> */}
+ <Hero/>
 <Project/>
-<Testimonials/>
-{/* <Project02/> */}
  <Banner/>
  <Skill/>
 <Whatido/>
+<Testimonials/>
 <Banner_02/>
 <About/>
 <Contact/>
