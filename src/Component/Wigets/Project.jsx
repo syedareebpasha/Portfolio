@@ -9,13 +9,14 @@ import img6 from '../../assets/project06.png'
 import Projectcard from '../Shared/Projectcard'
 
 const projects = [
-  {
-    image: img1,
-    title: "HelpHub AI",
-    description: "An AI-powered support hub that answers queries intelligently using NLP and contextual understanding.",
-    tag: "AI",
-    githubUrl: "https://github.com/syedareebpasha/HACKATHON",
-     liveUrl: "https://helphubaii.netlify.app/"  },
+   {
+    image: img6,
+    title: "E-commerce Development",
+    description: "E=Commerce Website landing page built with Reactjs & Tailwindcss fully responsive Website, increases user experience.",
+    tag: "E-Commerce",
+    liveUrl: "https://luxecartshopping.netlify.app/",
+    githubUrl: "https://github.com/syedareebpasha/E-commerce-website"
+  },
   {
     image: img2,
     title: "Feast",
@@ -25,13 +26,14 @@ const projects = [
       liveUrl: "https://feastfooddelivery.netlify.app/"
   },
   {
-    image: img3,
-    title: "To-Do App",
-    description: "To-Do Application built with html, css and javascript",
-    tag: "To-Do",
-     githubUrl: "https://github.com/syedareebpasha/ToDo-App",
-     liveUrl: "https://javascripttodoappp.netlify.app/"
-  },
+    image: img1,
+    title: "HelpHub AI",
+    description: "An AI-powered support hub that answers queries intelligently using NLP and contextual understanding.",
+    tag: "AI",
+    githubUrl: "https://github.com/syedareebpasha/HACKATHON",
+     liveUrl: "https://helphubaii.netlify.app/"  
+    },
+  ,
   {
     image: img4,
     title: "Portfolio",
@@ -49,13 +51,14 @@ const projects = [
     githubUrl: "https://github.com/yourusername/uiux-design"
   },
   {
-    image: img6,
-    title: "E-commerce Development",
-    description: "Scalable multi-vendor marketplace with real-time inventory, analytics dashboard and payment gateway.",
-    tag: "E-Commerce",
-    liveUrl: "https://your-live-url.com",
-    githubUrl: "https://github.com/yourusername/marketplace"
+    image: img3,
+    title: "To-Do App",
+    description: "To-Do Application built with html, css and javascript",
+    tag: "To-Do",
+     githubUrl: "https://github.com/syedareebpasha/ToDo-App",
+     liveUrl: "https://javascripttodoappp.netlify.app/"
   }
+ 
 ]
 
 const Project = () => {
