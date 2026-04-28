@@ -14,7 +14,7 @@ const projects = [
     title: "E-commerce Development",
     description: "E=Commerce Website landing page built with Reactjs & Tailwindcss fully responsive Website, increases user experience.",
     tag: "E-Commerce",
-    liveUrl: "https://luxecartshopping.netlify.app/",
+    liveUrl: "https://luxecart-wine.vercel.app/",
     githubUrl: "https://github.com/syedareebpasha/E-commerce-website"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description: "A fully responsive, modern food delivery web application built with html, css and javascript with dynamic features.",
     tag: "Food Delivery Web",
      githubUrl: "https://github.com/syedareebpasha/Food-Delivery-App",
-      liveUrl: "https://feastfooddelivery.netlify.app/"
+      liveUrl: "https://feast-eight.vercel.app/"
   },
   {
     image: img1,
@@ -31,7 +31,7 @@ const projects = [
     description: "An AI-powered support hub that answers queries intelligently using NLP and contextual understanding.",
     tag: "AI",
     githubUrl: "https://github.com/syedareebpasha/HACKATHON",
-     liveUrl: "https://helphubaii.netlify.app/"  
+     liveUrl: "https://helphub-ai-wheat.vercel.app/"  
     },
   ,
   {
@@ -40,7 +40,7 @@ const projects = [
     description: "Responsive Portfolio Website with smooth animations, optimized performance and clean code architecture built with Reactjs and css",
     tag: "Portfolio",
     githubUrl: "https://github.com/syedareebpasha/Portfolio",
-     liveUrl: "https://syedareebpasha.netlify.app/"
+     liveUrl: "https://syedareebpasha.vercel.app/"
   },
   {
     image: img5,
@@ -56,7 +56,7 @@ const projects = [
     description: "To-Do Application built with html, css and javascript",
     tag: "To-Do",
      githubUrl: "https://github.com/syedareebpasha/ToDo-App",
-     liveUrl: "https://javascripttodoappp.netlify.app/"
+     liveUrl: "https://to-do-app-iota-vert.vercel.app/"
   }
  
 ]
