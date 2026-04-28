@@ -2,9 +2,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { FaStar } from 'react-icons/fa';
-import profile1 from './../../assets/profile1.png';
-import profile2 from './../../assets/profile2.jpeg';
-import profile3 from './../../assets/profile3.jpeg';
+import profile1 from '../../../assets/profile1.png';
+import profile2 from '../../../assets/profile2.jpeg';
+import profile3 from '../../../assets/profile3.jpeg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';

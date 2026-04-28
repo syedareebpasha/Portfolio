@@ -1,8 +1,8 @@
 import React from 'react'
 import "./About.css"
-import Button from '../Shared/Button'
+import Button from '../../Shared/Button'
 import { FaDownload } from "react-icons/fa6"
-import CV from '../../assets/Syed_Areeb_Pasha_CV.pdf'
+import CV from '../../../assets/Syed_Areeb_Pasha_CV.pdf'
 
 
 const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub']

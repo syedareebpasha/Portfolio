@@ -1,12 +1,12 @@
 import React from 'react'
 import './Project.css'
-import img1 from '../../assets/project01.png'
-import img2 from '../../assets/project02.png'
-import img3 from '../../assets/project03.png'
-import img4 from '../../assets/project04.png'
-import img5 from '../../assets/project05.png'
-import img6 from '../../assets/project06.png'
-import Projectcard from '../Shared/Projectcard'
+import img1 from '../../../assets/project01.png'
+import img2 from '../../../assets/project02.png'
+import img3 from '../../../assets/project03.png'
+import img4 from '../../../assets/project04.png'
+import img5 from '../../../assets/project05.png'
+import img6 from '../../../assets/project06.png'
+import Projectcard from '../../Shared/Projectcard'
 
 const projects = [
    {

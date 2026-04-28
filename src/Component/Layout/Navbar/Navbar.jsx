@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
-import Button from '../Shared/Button'
-import Alogo from '../../assets/Alogo.png'
+import Button from '../../Shared/Button'
+import Alogo from '../../../assets/Alogo.png'
 const Navbar = () => {
   return (
      <nav class="navbar">

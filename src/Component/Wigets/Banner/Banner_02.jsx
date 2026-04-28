@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner_02.css";
 import { MdOutlineStarRate } from "react-icons/md";
-import IconDiv from "../Shared/IconDiv";
+import IconDiv from "../../Shared/IconDiv";
  
 const banner2 = [
   { name:'UI/UX DESIGN' , icon:MdOutlineStarRate},

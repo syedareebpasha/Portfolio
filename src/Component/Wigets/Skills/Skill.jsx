@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skill.css'
-import IconDiv from '../Shared/IconDiv.jsx'
+import IconDiv from '../../Shared/IconDiv.jsx'
 import { IoLogoHtml5 }       from "react-icons/io5"
 import { FaCss3Alt }         from "react-icons/fa"
 import { IoLogoJavascript }  from "react-icons/io"

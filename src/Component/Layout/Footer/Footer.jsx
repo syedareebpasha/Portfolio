@@ -1,10 +1,10 @@
 import React from 'react'
 import './Footer.css'
-import img from '../../assets/Alogo.png'
+import img from '../../../assets/Alogo.png'
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
-import IconDiv from '../../Component/Shared/IconDiv'
+import IconDiv from '../../../Component/Shared/IconDiv'
  import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
