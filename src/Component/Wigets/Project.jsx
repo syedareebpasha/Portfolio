@@ -48,7 +48,7 @@ const projects = [
     description: "Landging page of Saylani SMIT website built with Reactjs and css",
     tag: "Landing Page",
     liveUrl: "https://your-live-url.com",
-    githubUrl: "https://github.com/yourusername/uiux-design"
+    githubUrl: "https://github.com/syedareebpasha/Saylani-Welfare"
   },
   {
     image: img3,
