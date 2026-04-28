@@ -2,6 +2,8 @@ import React from 'react'
 import "./About.css"
 import Button from '../Shared/Button'
 import { FaDownload } from "react-icons/fa6"
+import CV from '../../assets/Syed_Areeb_Pasha_CV.pdf'
+
 
 const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub']
 
@@ -57,7 +59,7 @@ const About = () => {
 
           <div className="about-btns">
             <Button text="Know More" className="btn-primary" />
-            <Button text="Download CV" icon={FaDownload} className="btn-outline" />
+           <a href={CV} download={CV}> <Button text="Download CV" icon={FaDownload} className="btn-outline" /></a>
             <div className="about-avail">
               <span className="avail-dot" />
               <span><strong>Available</strong> for freelance</span>
