@@ -105,7 +105,7 @@ font-family: "syne";
   100% { transform: translateX(-50%); }
 }
 
-.react, .html, .css, .javascript, .bootstrap, .tailwind, .git, .github, .netlify, .vs-code{
+.node, .react, .html, .css, .javascript, .bootstrap, .tailwind, .git, .github, .netlify, .vs-code{
   width: 170px;
   padding: 1.6rem 1rem 1.2rem;
   background: #ffffff;
@@ -158,6 +158,40 @@ font-family: "syne";
 
 .html:hover::before { opacity: 1; }
 .html:hover::after  { opacity: 1; }
+
+.node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: green;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.node::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(37, 99, 235, 0.04) 0%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.node:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #bfdbfe;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.14);
+}
+
+.node:hover::before { opacity: 1; }
+.node:hover::after  { opacity: 1; }
 
 .vs-code::before {
   content: '';
