@@ -18,6 +18,7 @@ const App = () => {
  <Navbar/>     
  <Hero/>
 <Project/>
+{/* <Project2/> */}
  <Skill/>
 <Whatido/>
 <Testimonials/>
