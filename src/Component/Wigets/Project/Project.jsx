@@ -11,13 +11,14 @@ import Projectcard2 from '../../Shared/Project2'
 const projects = [
    {
     bgimage: img6,
-    title: "E-commerce Development",
+    title: "LuxeCart",
     description: "E=Commerce Website landing page built with Reactjs & Tailwindcss fully responsive Website, increases user experience.",
     tag: "E-Commerce",
     liveUrl: "https://luxecart-wine.vercel.app/",
     githubUrl: "https://github.com/syedareebpasha/E-commerce-website",
-         techStack:"[REACT JS, TAILWIND CSS]"
-  },
+         techStack:"[REACT JS, TAILWIND CSS]",
+category:"E-commerce Development"  
+        },
   {
     bgimage: img2,
     title: "Feast",
@@ -25,7 +26,8 @@ const projects = [
     tag: "Food Delivery Web",
      githubUrl: "https://github.com/syedareebpasha/Food-Delivery-App",
       liveUrl: "https://feast-eight.vercel.app/",
-           techStack:"[HTML, CSS, JAVASCRIPT]"
+           techStack:"[HTML, CSS, JAVASCRIPT]",
+category:"Food Delivery website"  
   },
   {
     bgimage: img1,
@@ -34,7 +36,9 @@ const projects = [
     tag: "AI",
     githubUrl: "https://github.com/syedareebpasha/HACKATHON",
      liveUrl: "https://helphub-ai-wheat.vercel.app/",
-          techStack:"[HTML, CSS]"  
+          techStack:"[HTML, CSS]",
+category:"AI"  
+          
     },
   ,
   {
@@ -44,7 +48,9 @@ const projects = [
     tag: "Portfolio",
     githubUrl: "https://github.com/syedareebpasha/Portfolio",
      liveUrl: "https://syedareebpasha.vercel.app/",    
-      techStack:"[REACT JS, CSS]"
+      techStack:"[REACT JS, CSS]",
+category:"Portfolio"  
+        
   },
   {
     bgimage: img5,
@@ -53,7 +59,9 @@ const projects = [
     tag: "Landing Page",
     liveUrl: "https://your-live-url.com",
     githubUrl: "https://github.com/syedareebpasha/Saylani-Welfare",
-     techStack:"[HTML, CSS]"  
+     techStack:"[HTML, CSS]"  ,
+category:"SMIT Landing Page"  
+        
   },
   {
     bgimage: img3,
@@ -62,7 +70,9 @@ const projects = [
     tag: "To-Do",
      githubUrl: "https://github.com/syedareebpasha/ToDo-App",
      liveUrl: "https://to-do-app-iota-vert.vercel.app/",
-     techStack:"[HTML, CSS, JAVASCRIPT]"
+     techStack:"[HTML, CSS, JAVASCRIPT]",
+category:"To-Do App"  
+        
   }
  
 ]
@@ -81,6 +91,7 @@ const Project = () => {
   liveUrl={project.liveUrl}
   githubUrl={project.githubUrl}
   bgimage={project.bgimage}
+  category={project.category}
   techStack={[ project.techStack ]}
 />
         ))}
