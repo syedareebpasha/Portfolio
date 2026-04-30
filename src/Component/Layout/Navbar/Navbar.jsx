@@ -2,6 +2,8 @@ import React from 'react'
 import './Navbar.css'
 import Button from '../../Shared/Button'
 import Alogo from '../../../assets/Alogo.png'
+import { RiMenu3Line} from "react-icons/ri"
+
 const Navbar = () => {
   return (
 
@@ -14,7 +16,7 @@ const Navbar = () => {
 </div>
 
     <input type="checkbox" id="menu-toggle"/>
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <label for="menu-toggle" class="menu-icon"><RiMenu3Line/></label>
 
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
