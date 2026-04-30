@@ -13,7 +13,7 @@ import { SiNetlify }         from "react-icons/si"
 import { FaReact } from "react-icons/fa6";
 import { color } from 'framer-motion'
 import { FaNodeJs } from "react-icons/fa";
-
+import Banner from '../Banner/Banner.jsx'
 
 const skills = [
   {icon: FaNodeJs,           pct: '50%',   name: 'Node Js',        color: 'green',    className:'node'},
@@ -31,8 +31,10 @@ const skills = [
 
 const Skill = () => {
   return (
-    <section className="skill-section " id="Skill">
-
+    <section className='panel panel3'>
+       <Banner/>
+      
+    <div className="skill-section " id="Skill">
       <div className="skill-heading">
         <span className="skill-chip">What I Know</span>
         <h2 className="skill-title">My <span className="skill-title-accent">Skills</span></h2>
@@ -58,7 +60,7 @@ const Skill = () => {
 
         </div>
       </div>
-
+    </div>
     </section>
   )
 }

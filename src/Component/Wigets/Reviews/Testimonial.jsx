@@ -35,7 +35,8 @@ const testimonial = [
 
 export default function Testimonial() {
   return (
-    <section className="ts-section" id="Testimonial">
+    <section className='panel panel5'>
+    <div className="ts-section" id="Testimonial">
 
       <div className="ts-header">
         <div className="ts-eyebrow">
@@ -97,6 +98,7 @@ export default function Testimonial() {
         </div>
       </div>
 
-    </section>
+    </div>
+ </section>
   );
 }

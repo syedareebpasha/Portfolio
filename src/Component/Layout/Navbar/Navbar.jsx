@@ -4,7 +4,10 @@ import Button from '../../Shared/Button'
 import Alogo from '../../../assets/Alogo.png'
 const Navbar = () => {
   return (
-     <nav class="navbar">
+
+    
+     <nav class="nav">
+    <div className="navbar">
     <div className='logo-text' >    
       {/* <img class="logo"  src={Alogo} alt=""/> */}
    <span style={{fontFamily:'syne'}}> AREEB.</span>
@@ -23,7 +26,7 @@ const Navbar = () => {
   <a href="#Contact"><Button text="Hire Me" className="btn-nav" /></a>
       </li>
     </ul>
-
+</div>
   </nav>
   )
 }

@@ -3,6 +3,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
+        <section className='panel panel7'>
     <div className="contact-section " id="Contact">
       <div className="contact-card">
 
@@ -65,6 +66,7 @@ const Contact = () => {
 
       </div>
     </div>
+  </section>
   )
 }
 

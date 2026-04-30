@@ -77,7 +77,8 @@ const services = [
 
 const Whatido = () => {
   return (
-    <section className="wi-section" id="Whatido">
+<section className='panel panel4'>
+<div className="wi-section" id="Whatido">
 
       <div className="wi-head">
         <div className="wi-eyebrow">
@@ -106,8 +107,9 @@ const Whatido = () => {
         ))}
       </div>
 
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
 export default Whatido

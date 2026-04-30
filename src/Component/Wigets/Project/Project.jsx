@@ -63,6 +63,7 @@ const projects = [
 
 const Project = () => {
   return (
+    <section className='panel panel2'>
     <div id="Project">
       <h1 className="project-heading">MY <span>PROJECTS</span></h1>
       <div className="project-list">
@@ -79,6 +80,7 @@ const Project = () => {
         ))}
       </div>
     </div>
+</section>
   )
 }
 

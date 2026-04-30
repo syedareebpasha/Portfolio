@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./About.css"
 import Button from '../../Shared/Button'
 import { FaDownload } from "react-icons/fa6"
 import CV from '../../../assets/Syed_Areeb_Pasha_CV.pdf'
-
+import Banner_02 from '../Banner/Banner_02'
+// const [cvdownload, setcvdownload] = useState (0)
 
 const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub']
+// useEffect (() => {
+//     toast.success("Download starting...");
+
+// }, [cvdownload])
+
 
 const About = () => {
   return (
+    <section className='panel panel6'>
+      <Banner_02/>
+    <div className='panel panel1'>
     <div className="about-section" id="About">
-
       <div className="about-eyebrow">
         <span className="about-eline" />
         Know more about me
@@ -59,7 +67,7 @@ const About = () => {
 
           <div className="about-btns">
             <Button text="Know More" className="btn-primary" />
-           <a href={CV} download={CV}> <Button text="Download CV" icon={FaDownload} className="btn-outline" /></a>
+           <a href={CV} download={CV}> <Button  text="Download CV" icon={FaDownload} className="btn-outline" /></a>
             <div className="about-avail">
               <span className="avail-dot" />
               <span><strong>Available</strong> for freelance</span>
@@ -69,6 +77,8 @@ const About = () => {
 
       </div>
     </div>
+  </div>
+  </section>
   )
 }
 
