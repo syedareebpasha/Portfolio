@@ -6,7 +6,7 @@ import CV from '../../../assets/Syed_Areeb_Pasha_CV.pdf'
 import Banner_02 from '../Banner/Banner_02'
 // const [cvdownload, setcvdownload] = useState (0)
 
-const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub']
+const skills = ['React.js', 'JavaScript', 'HTML', 'CSS','Tailwind', 'UI/UX', 'Git', 'GitHub', 'Node.js', 'Bootstrap']
 // useEffect (() => {
 //     toast.success("Download starting...");
 
